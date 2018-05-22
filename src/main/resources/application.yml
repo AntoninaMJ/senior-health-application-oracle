@@ -1,6 +1,8 @@
 spring:
   datasource:
     url: jdbc:h2:~/senior-health;MODE=Oracle
+    username: antonina
+    password: antonina
     driver-class-name: org.h2.Driver
   jpa:
     hibernate:

@@ -26,7 +26,7 @@ public class Page<T> implements Iterable<T> {
 
     public int getTotalPages() {
         int size = pageRequest.getSize();
-        return size == 0 ? 1 : (int) Math.ceil((double) content.size() / (double) size);
+        return size == 0 ? 1 : (int) Math.ceil((double) totalElements / (double) size);
     }
 
     public int getNumber() {
